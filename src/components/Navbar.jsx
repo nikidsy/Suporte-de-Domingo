@@ -1,22 +1,49 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
+import logo from "../assets/logo.png"
 
 function Navbar(){
 
+const location = useLocation()
+
 return(
 
-<header>
+<header className="navbar">
 
-<h2>Suporte de Domingo</h2>
+<div className="logo-container">
+  <img src={logo} alt="logo" className="logo" />
+</div>
 
 <nav>
 
-<Link to="/">Home</Link>
-<Link to="/sobre">Sobre</Link>
-<Link to="/servicos">Serviços</Link>
-<Link to="/contato">Contato</Link>
+<Link 
+to="/" 
+className={location.pathname === "/" ? "active" : ""}
+>
+Home
+</Link>
+
+<Link 
+to="/sobre"
+className={location.pathname === "/sobre" ? "active" : ""}
+>
+Sobre
+</Link>
+
+<Link 
+to="/servicos"
+className={location.pathname === "/servicos" ? "active" : ""}
+>
+Serviços
+</Link>
+
+<Link 
+to="/contato"
+className={location.pathname === "/contato" ? "active" : ""}
+>
+Contato
+</Link>
 
 </nav>
-
 </header>
 
 )
