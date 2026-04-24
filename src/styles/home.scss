@@ -1,0 +1,147 @@
+@import "./global";
+
+// ===== FUNDO GRID =====
+body {
+  background-color: #cfe0e0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+// ===== HERO =====
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 140px 20px 160px;
+
+  h1 {
+    font-size: 56px;
+    font-weight: 900;
+    color: #2c2c8c;
+    z-index: 2;
+    position: relative;
+  }
+
+  .highlight-box {
+    margin-top: 20px;
+    display: inline-block;
+    background: #ffd9c2;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #cc5500;
+  }
+
+  // 🔥 BOLAS (blobs)
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.8;
+  }
+
+  &::before {
+    background: #ff7a00;
+    top: 50px;
+    left: 20%;
+  }
+
+  &::after {
+    background: #4dabf7;
+    right: 20%;
+    top: 100px;
+  }
+}
+
+// ===== ONDA =====
+.wave {
+  margin-top: -60px;
+
+  svg {
+    width: 100%;
+    height: 120px;
+    display: block;
+  }
+
+  path {
+    fill: #2c2c8c;
+  }
+}
+
+// ===== SOBRE =====
+.sobre {
+  background: #2c2c8c;
+  color: white;
+  text-align: center;
+  padding: 80px 40px;
+
+  h2 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  p {
+    max-width: 900px;
+    margin: 0 auto 10px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+// ===== SERVIÇOS =====
+.servicos {
+  background: #2c2c8c;
+  text-align: center;
+  padding: 40px 20px;
+
+  h2 {
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    .card {
+      width: 220px;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 13px;
+      text-align: left;
+
+      h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      &.red { background: #ff4d4d; }
+      &.orange { background: #ff7a00; }
+      &.green { background: #28c76f; }
+      &.yellow {
+        background: #ffc107;
+        color: #333;
+      }
+    }
+  }
+
+  .cta {
+    color: white;
+    font-size: 16px;
+
+    a {
+      color: #ff7a00;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}

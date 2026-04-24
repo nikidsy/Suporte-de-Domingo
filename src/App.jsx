@@ -1,33 +1,20 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-
 import Navbar from "./components/Navbar"
 
-import Home from "./pages/Home"
-import Sobre from "./pages/Sobre"
-import Servicos from "./pages/Servicos"
+import HomePage from "./pages/HomePage"
 import Contato from "./pages/Contato"
 
 function App(){
+  return(
+    <BrowserRouter>
+      <Navbar />
 
-return(
-
-<BrowserRouter>
-
-<Navbar/>
-
-<Routes>
-
-<Route path="/" element={<Home/>}/>
-<Route path="/sobre" element={<Sobre/>}/>
-<Route path="/servicos" element={<Servicos/>}/>
-<Route path="/contato" element={<Contato/>}/>
-
-</Routes>
-
-</BrowserRouter>
-
-)
-
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contato" element={<Contato />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App

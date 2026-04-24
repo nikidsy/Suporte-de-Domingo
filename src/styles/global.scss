@@ -1,0 +1,15 @@
+$primary: #2c2c8c;
+$secondary: #1e1e6a;
+$orange: #ff7a00;
+$bg-light: #cfe0e0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: $bg-light;
+}
