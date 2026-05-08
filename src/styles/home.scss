@@ -1,36 +1,44 @@
-@import "./global";
+@use "./global" as *;
 
-// HERO
 .hero {
   position: relative;
   text-align: center;
-  padding: 180px 20px 220px;
+  padding: 400px 20px 180px;
 
   h1 {
-    font-size: 72px;
+    font-size: 80px;
     font-weight: 900;
     color: $primary;
     letter-spacing: -2px;
+
+    @media (max-width: 768px) {
+      font-size: 42px;
+    }
   }
 
   .subtitle {
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 18px;
-    color: #333;
-  }
-
-  .highlight-box {
-    margin-top: 25px;
-    display: inline-block;
-    background: #ffd9c2;
-    padding: 12px 18px;
-    border-radius: 6px;
-    font-size: 14px;
-    color: #cc5500;
+    color: #444;
   }
 }
 
-// BOLHAS
+.hero-tagline {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
 .hero::before,
 .hero::after {
   content: "";
@@ -44,21 +52,20 @@
   width: 200px;
   height: 200px;
   background: $orange;
-  top: 60px;
-  left: 20%;
+  top: 270px;
+  left: 18%;
 }
 
 .hero::after {
   width: 200px;
   height: 200px;
   background: #4dabf7;
-  right: 20%;
-  top: 120px;
+  right: 18%;
+  top: 450px;
 }
 
-// ONDA
 .wave {
-  margin-top: -100px;
+  margin-top: -10px;
 
   svg {
     width: 100%;
@@ -71,32 +78,41 @@
   }
 }
 
-// SOBRE
 .sobre {
   background: $primary;
   color: white;
   text-align: center;
-  padding: 80px 40px;
+  padding: 80px 20px;
 
   h2 {
-    margin-bottom: 30px;
-    font-size: 22px;
+    margin-bottom: 20px;
+    font-size: 30px;
     letter-spacing: 2px;
-  }
-
-  p {
-    max-width: 900px;
-    margin: 0 auto;
-    font-size: 14px;
-    line-height: 1.6;
   }
 }
 
-// SERVIÇOS
+.sobre-box {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.sobre-texto {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  color: #f1f1f1;
+  white-space: pre-line;
+}
+
 .servicos {
   background: $primary;
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
 
   h2 {
     color: white;
@@ -104,21 +120,47 @@
   }
 }
 
-// CARDS
-.cards {
+.carousel-servicos {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+
+  button {
+    background: $orange;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .card {
+    width: 500px;
+    background: #ff7a00;
+    color: #333;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    button {
+      margin: 10px 0;
+    }
+  }
 }
 
 .card {
-  width: 240px;
-  padding: 25px;
+  padding: 30px;
   border-radius: 16px;
-  color: white;
   font-size: 14px;
-  line-height: 1.5;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 
   h3 {
@@ -127,16 +169,6 @@
   }
 }
 
-// CORES
-.card.red { background: #ff4d4d; }
-.card.orange { background: #ff7a00; }
-.card.green { background: #28c76f; }
-.card.yellow {
-  background: #ffc107;
-  color: #333;
-}
-
-// CTA
 .cta {
   margin-top: 30px;
   color: white;

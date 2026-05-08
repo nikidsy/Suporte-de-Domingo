@@ -1,4 +1,4 @@
-@import "./global";
+@use "./global" as *;
 
 .navbar {
   display: flex;
@@ -9,32 +9,50 @@
   width: 100%;
   top: 0;
   z-index: 10;
-}
 
-.logo {
-  display: flex;
-  align-items: center;
+  @media (max-width: 768px) {
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .logo img {
   height: 90px;
   object-fit: contain;
+
+  @media (max-width: 768px) {
+    height: 70px;
+  }
 }
 
-nav a {
-  margin-left: 30px;
-  text-decoration: none;
-  color: $primary;
-  font-weight: 500;
-  font-size: 20px;
-  transition: 0.3s;
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 
-  &:hover {
-    color: $orange;
+  a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: $primary;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.3s;
+
+    &:hover {
+      color: $orange;
+    }
+
+    &.active {
+      color: $orange;
+      font-weight: bold;
+    }
   }
 
-  &.active {
-    color: $orange;
-    font-weight: bold;
+  @media (max-width: 768px) {
+    a {
+      margin-left: 15px;
+      font-size: 16px;
+    }
   }
 }

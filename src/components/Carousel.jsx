@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const data = [
   { title: "Suporte Emergencial", text: "Atendimento rápido." },
@@ -9,6 +9,14 @@ const data = [
 
 function Carousel(){
   const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex(prev => (prev + 1) % data.length)
+    }, 4000)
+
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <div className="carousel">

@@ -12,6 +12,7 @@ function App(){
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contato" element={<Contato />} />
+        <Route path="*" element={<h1>Página não encontrada</h1>} />
       </Routes>
     </BrowserRouter>
   )

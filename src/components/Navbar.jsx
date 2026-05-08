@@ -18,7 +18,10 @@ function Navbar() {
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
 
-        <Link to="/contato" className={location.pathname === "/contato" ? "active" : ""}>
+        <Link 
+          to="/contato" 
+          className={location.pathname === "/contato" ? "active" : ""}
+        >
           Contato
         </Link>
       </nav>

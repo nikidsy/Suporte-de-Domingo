@@ -1,15 +1,17 @@
 import "../styles/main.scss"
+import ApiServices from "../components/ApiServices"
 
 function HomePage(){
   return(
     <>
       <section className="hero">
         <h1>SUPORTE DE DOMINGO</h1>
-        <p className="subtitle">Transformação digital</p>
 
-        <div className="highlight-box">
-          Descubra tudo o que podemos oferecer
-        </div>z
+        <div className="subtitle">
+        <p>Seu sistema nunca para. A gente também não.</p> 
+        <p>Descubra como podemos impulsionar sua transformação digital e levar seu negócio ao próximo nível.</p>
+        </div>
+        
       </section>
 
       <div className="wave">
@@ -18,43 +20,30 @@ function HomePage(){
         </svg>
       </div>
 
-      <section className="sobre">
-        <h2>SOBRE NÓS</h2>
-        <p>
-          Somos uma equipe dedicada a oferecer suporte técnico confiável e rápido,
-          garantindo que seu sistema funcione sem interrupções.
-        </p>
-      </section>
+      <section className="sobre" id="sobre">
+  <h2>SOBRE NÓS</h2>
 
-      <section className="servicos">
+  <div className="sobre-box">
+    <p className="sobre-texto">
+      A Suporte de Domingo é uma empresa de tecnologia especializada no desenvolvimento de soluções digitais modernas, eficientes e escaláveis. Atuamos com foco em entregar não apenas sistemas funcionais, mas experiências completas que agregam valor real ao negócio de nossos clientes. 
+
+      Nosso trabalho integra tecnologia, design e estratégia, permitindo a criação de plataformas intuitivas, seguras e preparadas para o crescimento. Cada projeto é pensado de forma personalizada, respeitando as necessidades específicas de cada cliente. 
+
+      Buscamos otimizar processos, reduzir custos e aumentar a performance, sempre com atenção à usabilidade e à experiência do usuário. Acreditamos que um bom sistema não é apenas aquele que funciona, mas aquele que facilita, conecta e impulsiona resultados. 
+
+      Na Suporte de Domingo, inovação, confiabilidade e compromisso caminham juntos para transformar desafios em soluções digitais inteligentes.
+    </p>
+  </div>
+</section>
+
+      <section className="servicos" id="servicos">
         <h2>NOSSOS SERVIÇOS</h2>
 
-        <div className="cards">
-          <div className="card red">
-            <h3>Suporte Emergencial</h3>
-            <p>Atendimento crítico para resolver problemas urgentes.</p>
-          </div>
-
-          <div className="card orange">
-            <h3>Resposta Imediata</h3>
-            <p>Equipe pronta para agir rapidamente.</p>
-          </div>
-
-          <div className="card green">
-            <h3>Mudanças e Correções</h3>
-            <p>Correções e melhorias contínuas.</p>
-          </div>
-
-          <div className="card yellow">
-            <h3>Monitoramento e Segurança</h3>
-            <p>Acompanhamento constante dos sistemas.</p>
-          </div>
-        </div>
+        <ApiServices />
 
         <div className="cta">
-          Quer solicitar um orçamento? <a href="#">Entre em contato</a>
+          Quer solicitar um orçamento? <a href="/contato">Entre em contato</a>
         </div>
-
       </section>
     </>
   )

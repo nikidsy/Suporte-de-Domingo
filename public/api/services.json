@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Suporte Técnico 24/7",
+    "description": "Oferecemos suporte técnico contínuo para garantir que seus sistemas estejam sempre operando com máxima eficiência. Nossa equipe atua rapidamente na identificação e resolução de problemas, minimizando impactos e garantindo a continuidade das operações.",
+    "benefits": [
+      "Atendimento imediato",
+      "Redução de tempo de inatividade",
+      "Suporte especializado"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Desenvolvimento de Sistemas",
+    "description": "Desenvolvemos soluções digitais sob medida, utilizando tecnologias modernas e práticas escaláveis. Criamos sistemas seguros, intuitivos e preparados para acompanhar o crescimento do seu negócio.",
+    "benefits": [
+      "Sistemas personalizados",
+      "Alta performance",
+      "Escalabilidade garantida"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Monitoramento de Sistemas",
+    "description": "Realizamos o monitoramento contínuo de aplicações e infraestruturas, identificando falhas antes que impactem o usuário final. Garantimos estabilidade, desempenho e confiabilidade em todos os processos.",
+    "benefits": [
+      "Prevenção de falhas",
+      "Monitoramento em tempo real",
+      "Maior estabilidade"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Segurança da Informação",
+    "description": "Implementamos estratégias de segurança para proteger dados e sistemas contra ameaças digitais. Atuamos com prevenção, detecção e resposta a incidentes, garantindo integridade e confidencialidade das informações.",
+    "benefits": [
+      "Proteção de dados",
+      "Redução de riscos",
+      "Conformidade com boas práticas"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Consultoria em Tecnologia",
+    "description": "Analisamos o cenário tecnológico da sua empresa e propomos soluções estratégicas alinhadas aos seus objetivos. Ajudamos a tomar decisões mais eficientes e a investir em tecnologia de forma inteligente.",
+    "benefits": [
+      "Planejamento estratégico",
+      "Otimização de recursos",
+      "Tomada de decisão mais assertiva"
+    ]
+  }
+]
