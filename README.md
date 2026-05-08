@@ -27,7 +27,7 @@ Este projeto é um **rebranding** da antiga plataforma *Suporte de Domingo*, tra
 
 ---
 
-# Como executar o projeto
+## Como executar o projeto
 
 Clone o repositório:
 
@@ -47,7 +47,7 @@ npm run dev
 
 ou so clicar no link da vercel que se encontra no repo
 
-# Rebranding
+## Rebranding
 
 O projeto passou por um processo completo de reformulação visual e estrutural, focando em:
 
@@ -57,7 +57,7 @@ Componentização
 Responsividade
 Performance
 
-# Status do projeto
+## Status do projeto
 Em desenvolvimento
 
 
