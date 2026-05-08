@@ -27,17 +27,6 @@ Este projeto é um **rebranding** da antiga plataforma *Suporte de Domingo*, tra
 
 ---
 
-## Estrutura do projeto
-
-```bash
-src/
- ├── assets/
- ├── components/
- ├── pages/
- ├── services/
- ├── styles/
- └── routes/
-
 # Como executar o projeto
 
 Clone o repositório:
@@ -70,3 +59,15 @@ Performance
 
 # Status do projeto
 Em desenvolvimento
+
+
+## Estrutura do projeto
+
+```bash
+src/
+ ├── assets/
+ ├── components/
+ ├── pages/
+ ├── services/
+ ├── styles/
+ └── routes/
