@@ -1,16 +1,72 @@
-# React + Vite
+Suporte de Domingo — Rebranding
+# Suporte de Domingo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma nova versão da plataforma **Suporte de Domingo**, agora com identidade visual renovada, melhorias de interface e integração com APIs modernas.
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este projeto é um **rebranding** da antiga plataforma *Suporte de Domingo*, trazendo:
 
-## React Compiler
+- Nova identidade visual
+- Layout mais moderno e responsivo
+- Melhor organização de componentes
+- Estrutura otimizada com React + Vite
+- Estilização utilizando SCSS
+- Integração com serviços e APIs
+- Melhor experiência do usuário
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tecnologias utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript
+- SCSS
+- ESLint
+
+---
+
+## Estrutura do projeto
+
+```bash
+src/
+ ├── assets/
+ ├── components/
+ ├── pages/
+ ├── services/
+ ├── styles/
+ └── routes/
+
+# Como executar o projeto
+
+Clone o repositório:
+
+git clone <URL_DO_REPOSITORIO>
+
+Entre na pasta:
+
+cd suporte-de-domingo
+
+Instale as dependências:
+
+npm install
+
+Execute o projeto:
+
+npm run dev
+
+ou so clicar no link da vercel que se encontra no repo
+
+# Rebranding
+
+O projeto passou por um processo completo de reformulação visual e estrutural, focando em:
+
+Interface mais limpa
+Melhor acessibilidade
+Componentização
+Responsividade
+Performance
+
+# Status do projeto
+Em desenvolvimento
