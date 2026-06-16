@@ -89,11 +89,6 @@ function ProjectsCarousel() {
   return (
     <>
       <section className="projects">
-        <h2>PROJETOS</h2>
-
-        <p className="projects-subtitle">
-          Nossos trabalhos: interfaces, códigos & experiências digitais
-        </p>
 
         <div className="projects-carousel">
           {projects.map((project, index) => (
