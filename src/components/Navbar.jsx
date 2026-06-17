@@ -20,8 +20,7 @@ function Navbar() {
 
         <Link 
           to="/contato" 
-          className={location.pathname === "/contato" ? "active" : ""}
-        >
+          className={location.pathname === "/contato" ? "active" : ""}>
           Contato
         </Link>
       </nav>

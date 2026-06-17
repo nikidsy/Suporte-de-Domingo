@@ -4,7 +4,6 @@ function Breadcrumb(){
   const location = useLocation()
   const path = location.pathname.split("/").filter(x => x)
 
-  // ❌ não mostra breadcrumb na home ou em rotas simples (tipo /contato)
   if (path.length <= 1) return null
 
   return(
