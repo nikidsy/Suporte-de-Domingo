@@ -365,8 +365,6 @@
   }
 }
 
-/* POPUP */
-
 .popup-overlay {
   position: fixed;
 
@@ -534,9 +532,9 @@
 }
 
 .footer {
-  background: #0d103d;
+  background: #edf6f765;
 
-  color: white;
+  color: rgb(0, 0, 0);
 
   padding: 50px 20px 30px;
 
@@ -569,8 +567,8 @@
   }
 
   p {
-    color: rgba(255,255,255,0.75);
-
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 700;
     line-height: 1.7;
 
     max-width: 420px;
@@ -596,7 +594,8 @@
   }
 
   a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
 
     text-decoration: none;
 
@@ -608,7 +607,7 @@
     gap: 10px;
 
     &:hover {
-      color: white;
+      color: rgb(255, 72, 0);
 
       transform: translateX(5px);
     }
@@ -624,7 +623,7 @@
 
   text-align: center;
 
-  color: rgba(255,255,255,0.5);
+  color: rgba(0, 0, 0, 0.5);
 
   font-size: 14px;
 }
