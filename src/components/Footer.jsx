@@ -27,29 +27,17 @@ function Footer() {
         <div className="footer-social">
           <h3>Contato</h3>
 
-          <a
-            href="https://api.whatsapp.com/send/?phone=5511967611652&text=Ol%C3%A1%21+Tenho+interesse+em+solicitar+um+or%C3%A7amento.&type=phone_number&app_absent=0"
-            target="_blank"
-            rel="noreferrer"
-          >
-            WhatsApp
-          </a>
+          <a href="https://api.whatsapp.com/send/?phone=5511967611652&text=Ol%C3%A1%21+Tenho+interesse+em+solicitar+um+or%C3%A7amento.&type=phone_number&app_absent=0"
+             target="_blank"
+             rel="noreferrer">WhatsApp</a>
 
-          <a
-            href="https://www.linkedin.com/company/suporte-de-domingo/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
+          <a href="https://www.linkedin.com/company/suporte-de-domingo/"
+             target="_blank"
+             rel="noreferrer">LinkedIn</a>
 
-          <a
-            href="https://www.instagram.com/suportededomingo/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Instagram
-          </a>
+          <a href="https://www.instagram.com/suportededomingo/"
+             target="_blank"
+             rel="noreferrer">Instagram</a>
         </div>
 
       </div>

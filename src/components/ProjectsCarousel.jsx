@@ -89,14 +89,9 @@ function ProjectsCarousel() {
   return (
     <>
       <section className="projects">
-
         <div className="projects-carousel">
           {projects.map((project, index) => (
-            <div
-              className="project-item"
-              key={index}
-              onClick={() => setSelectedProject(project)}
-            >
+            <div className="project-item"key={index} onClick={() => setSelectedProject(project)}>
               <img src={project.image} alt={project.title} />
             </div>
           ))}
@@ -104,25 +99,10 @@ function ProjectsCarousel() {
       </section>
 
       {selectedProject && (
-        <div
-          className="popup-overlay"
-          onClick={() => setSelectedProject(null)}
-        >
-          <div
-            className="popup"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="close-btn"
-              onClick={() => setSelectedProject(null)}
-            >
-              ✕
-            </button>
-
-            <img
-              src={selectedProject.image}
-              alt={selectedProject.title}
-            />
+        <div className="popup-overlay" onClick={() => setSelectedProject(null)}>
+          <div className="popup" onClick={(e) => e.stopPropagation()}>
+            <button className="close-btn" onClick={() => setSelectedProject(null)}>✕</button>
+            <img src={selectedProject.image} alt={selectedProject.title}/>
 
             <div className="popup-content">
               <h3>{selectedProject.title}</h3>

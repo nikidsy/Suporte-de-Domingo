@@ -18,9 +18,7 @@
     font-size: 96px;
     font-weight: 900;
     color: $primary;
-
     letter-spacing: -2px;
-
     position: relative;
     z-index: 3;
 
@@ -33,16 +31,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     margin-top: 10px;
-
     font-size: 24px;
     font-weight: 700;
-
     line-height: 21px;
-
     color: #000;
-
     position: relative;
     z-index: 3;
 
@@ -76,7 +69,6 @@
 
   top: -550px;
   left: -750px;
-
   z-index: 1;
 }
 
@@ -95,20 +87,15 @@
 
   right: -770px;
   bottom: -700px;
-
   z-index: 1;
 }
 
 .wave {
   position: absolute;
-
   bottom: -2px;
   left: 0;
-
   width: 100%;
-
   line-height: 0;
-
   z-index: 2;
 
   svg {
@@ -124,35 +111,24 @@
 
 .sobre {
   background: $primary;
-
   color: white;
-
   text-align: center;
-
   padding: 80px 20px;
 
   h2 {
     margin-bottom: 20px;
-
     font-size: 30px;
-
     letter-spacing: 2px;
   }
 }
 
 .sobre-box {
   max-width: 1379px;
-
   margin: 0 auto;
-
   padding: 70px;
-
   background: rgba(217, 217, 217, 0.10);
-
   border-radius: 16px;
-
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25) inset;
-
   backdrop-filter: blur(10px);
 
   @media (max-width: 768px) {
@@ -162,13 +138,9 @@
 
 .sobre-texto {
   font-size: 24px;
-
   font-weight: 700;
-
   line-height: 1.5;
-
   text-align: center;
-
   color: #fff;
 
   @media (max-width: 768px) {
@@ -178,9 +150,7 @@
 
 .servicos {
   background: $primary;
-
   text-align: center;
-
   padding: 80px 20px 20px;
 
   h2 {
@@ -192,13 +162,9 @@
 
 .services-grid {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
   gap: 30px;
-
   max-width: 1400px;
-
   margin: 0 auto;
 
   @media (max-width: 1100px) {
@@ -212,36 +178,25 @@
 
 .service-card {
   min-height: 260px;
-
   border-radius: 20px;
-
   padding: 30px 25px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
-
   transition: 0.3s ease;
 
   h3 {
     font-size: 26px;
-
     margin-bottom: 18px;
-
     font-weight: 800;
-
     color: white;
   }
 
   p {
     font-size: 16px;
-
     line-height: 1.6;
-
     color: white;
-
     font-weight: 500;
   }
 
@@ -268,21 +223,15 @@
 
 .cta {
   margin-top: 40px;
-
   color: white;
-
   font-size: 18px;
 
   a {
     color: $orange;
-
     font-weight: bold;
-
     text-decoration: none;
   }
 }
-
-/* PROJETOS */
 
 .projects {
   margin-top: 60px;
@@ -305,14 +254,10 @@
 .projects-carousel {
   display: flex;
   gap: 24px;
-
   width: 100%;
-
   overflow-x: auto;
   overflow-y: hidden;
-
   scroll-behavior: smooth;
-
   padding: 10px 0 25px;
 
   &::-webkit-scrollbar {
@@ -326,18 +271,11 @@
 }
 
 .project-item {
-  flex: 0 0 550px;
-
-  height: 320px;
-
+  flex: 0 0 580px;
   border-radius: 20px;
-
   overflow: hidden;
-
   background: #fff;
-
   cursor: pointer;
-
   transition: 0.3s ease;
 
   &:hover {
@@ -347,13 +285,8 @@
   img {
     width: 100%;
     height: 100%;
-
     object-fit: contain;
-
     background: #f5f5f5;
-
-    padding: 15px;
-
     display: block;
   }
 }
@@ -367,133 +300,94 @@
 
 .popup-overlay {
   position: fixed;
-
   inset: 0;
-
   background: rgba(0, 0, 0, 0.7);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 20px;
-
   z-index: 9999;
 }
 
 .popup {
   width: 100%;
-
   max-width: 850px;
-
   background: #11145f;
-
   border-radius: 24px;
-
   overflow: hidden;
-
   position: relative;
-
   animation: popupAnimation 0.3s ease;
-
-  max-height: 90vh;
-
-  overflow-y: auto;
 }
 
 .popup img {
   width: 100%;
-
   height: 320px;
-
   object-fit: cover;
-
   background: #e9e9e9;
 }
 
 .popup-content {
   padding: 40px;
-
   color: white;
+  overflow: hidden;
 }
 
 .popup-content h3 {
   font-size: 48px;
-
   margin-bottom: 20px;
-
   text-align: center;
 }
 
 .popup-description {
   font-size: 18px;
-
   line-height: 1.8;
-
-  color: rgba(255,255,255,0.85);
-
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 35px;
-
   text-align: center;
 }
 
 .popup-info {
   display: flex;
-
-  flex-direction: column;
-
-  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .popup-info div {
-  background: rgba(255,255,255,0.06);
-
-  border: 1px solid rgba(255,255,255,0.08);
-
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
-
   padding: 18px;
+  min-width: 180px;
+  flex: 1;
 }
 
 .popup-info strong {
   display: block;
-
   margin-bottom: 8px;
-
   color: #ff7a00;
-
   font-size: 16px;
 }
 
 .popup-info span {
-  color: rgba(255,255,255,0.9);
-
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.5;
 }
 
 .close-btn {
   position: absolute;
-
   top: 18px;
   right: 18px;
-
   width: 45px;
   height: 45px;
-
   border: none;
-
   border-radius: 50%;
-
-  background: rgba(0,0,0,0.5);
-
+  background: rgba(0, 0, 0, 0.5);
   color: white;
-
   font-size: 20px;
-
   cursor: pointer;
-
   z-index: 5;
-
   transition: 0.3s;
 }
 
@@ -514,6 +408,10 @@
 }
 
 @media (max-width: 768px) {
+  .popup {
+    width: 95%;
+  }
+
   .popup img {
     height: 180px;
   }
@@ -529,32 +427,39 @@
   .popup-description {
     font-size: 15px;
   }
+
+  .popup-info {
+    flex-direction: column;
+  }
+
+  .popup-info div {
+    width: 100%;
+  }
 }
 
 .footer {
+<<<<<<< HEAD
   background: #edf6f765;
 
   color: rgb(0, 0, 0);
 
+=======
+  background: #0212ff88;
+  color: white;
+>>>>>>> 6357deefb8d9b9bd16ed497332883c023dc63d89
   padding: 50px 20px 30px;
-
   margin-top: 0px;
 }
 
 .footer-top {
   max-width: 1400px;
-
   margin: 0 auto;
-
   display: grid;
-
   grid-template-columns: 2fr 1fr 1fr;
-
   gap: 60px;
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
-
     text-align: center;
   }
 }
@@ -562,15 +467,17 @@
 .footer-brand {
   img {
     width: 200px;
-
     margin-bottom: 20px;
   }
 
   p {
+<<<<<<< HEAD
     color: rgba(0, 0, 0, 0.75);
     font-weight: 700;
+=======
+    color: rgba(255,255,255,0.75);
+>>>>>>> 6357deefb8d9b9bd16ed497332883c023dc63d89
     line-height: 1.7;
-
     max-width: 420px;
 
     @media (max-width: 900px) {
@@ -582,33 +489,35 @@
 .footer-links,
 .footer-social {
   display: flex;
-
   flex-direction: column;
-
   gap: 14px;
 
   h3 {
     margin-bottom: 10px;
-
-    color: #ff7a00;
+    color: #131f86;
   }
 
   a {
+<<<<<<< HEAD
     color: rgba(0, 0, 0, 0.8);
     font-weight: 700;
 
+=======
+    color: rgba(255,255,255,0.8);
+>>>>>>> 6357deefb8d9b9bd16ed497332883c023dc63d89
     text-decoration: none;
-
     transition: 0.3s;
-
     display: flex;
     align-items: center;
-
     gap: 10px;
 
     &:hover {
+<<<<<<< HEAD
       color: rgb(255, 72, 0);
 
+=======
+      color: white;
+>>>>>>> 6357deefb8d9b9bd16ed497332883c023dc63d89
       transform: translateX(5px);
     }
   }
@@ -616,14 +525,15 @@
 
 .footer-bottom {
   margin-top: 50px;
-
   padding-top: 25px;
-
   border-top: 1px solid rgba(255,255,255,0.08);
-
   text-align: center;
+<<<<<<< HEAD
 
   color: rgba(0, 0, 0, 0.5);
 
+=======
+  color: rgba(255,255,255,0.5);
+>>>>>>> 6357deefb8d9b9bd16ed497332883c023dc63d89
   font-size: 14px;
 }
